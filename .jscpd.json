@@ -1,0 +1,6 @@
+{
+  "threshold": 15,
+  "reporters": ["html", "console"],
+  "ignore": ["**/node_modules/**", "**/legacy_v1/**", "**/.next/**", "**/coverage/**"],
+  "absolute": true
+}
