@@ -5,6 +5,22 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Monitoramento Clínico (PSPD)',
+    description: 'Sistema de microsserviços conteinerizado para monitoramento clínico operando em Kubernetes. Desenvolvi o frontend React/Vite com autenticação Keycloak (OIDC) e modo mock, controle de acesso baseado em perfis (Médico, Estagiário, Pesquisador), exportação de prontuários em padrão FHIR e telemetria ponta a ponta com OpenTelemetry.',
+    stack: ['React', 'Keycloak (OIDC)', 'OpenTelemetry', 'Docker / Kubernetes'],
+    links: [
+      { name: 'Ver no GitHub', url: 'https://github.com/johnaopedro/k8s-pspd' }
+    ]
+  },
+  {
+    title: 'Pipeline DICOM (PSPD)',
+    description: 'Pipeline distribuído para processamento e anonimização de imagens médicas DICOM utilizando gRPC assíncrono (com os 4 tipos de comunicação) vs REST/JSON. Desenvolvi o Módulo P (Gateway HTTP em FastAPI) que converte imagens DICOM para visualização PNG em tempo real, além da interface web dinâmica para upload e benchmarks.',
+    stack: ['FastAPI', 'gRPC (Python)', 'Pydicom', 'Docker / Minikube'],
+    links: [
+      { name: 'Ver no GitHub', url: 'https://github.com/johnaopedro/PSPD' }
+    ]
+  },
+  {
     title: 'Letrix',
     description: 'Plataforma web que utiliza Inteligência Artificial (Visão Computacional) para ler a escrita manuscrita e avaliar automaticamente o nível de letramento de crianças.',
     stack: ['Next.js', 'Supabase', 'Gemini AI', 'Mailjet'],
